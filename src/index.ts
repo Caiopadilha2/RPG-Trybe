@@ -1,4 +1,4 @@
-import Battle, { PVP } from './Battle';
+import Battle, { PVE, PVP } from './Battle';
 import Character from './Character';
 import Dragon from './Dragon';
 import Monster from './Monster';
@@ -15,13 +15,10 @@ const monster2 = new Dragon();
 
 const pvp = new PVP(player2, player3);
 
-// TODO: CRIAR CLASSE PVE
+const pve = new PVE(player1, [monster1, monster2]);
 
-const runBattle = (battles: Battle[]) => {
+const runBattles = (battles: Battle[]) => {
   battles.map((battle) => battle.fight());
 };
 
-export { player1, player2, player3 };
-export { monster1, monster2 };
-export { pvp };
-export { runBattle };
+export { player1, player2, player3, monster1, monster2, pvp, pve, runBattles };
