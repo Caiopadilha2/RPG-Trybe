@@ -36,3 +36,10 @@ export default class PVE extends Battle {
     return super.fight();
   }
 }
+
+// while (this._figther.lifePoints && this._monsters.length) {
+//   this._monsters.forEach((monster) => this._figther.attack(monster));
+//   this._monsters = this._monsters.filter((monster) => monster.lifePoints);
+//   this._monsters.forEach((monster) => monster.attack(this._figther));
+// }
+// return this._figther.lifePoints ? 1 : -1;
